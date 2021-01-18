@@ -82,29 +82,89 @@ function my_keydown(e){
         car2right();
         console.log("car 2 right");
     }
+    if(car1_x>700)
+    {
+        console.log("Car 1 Won");
+        document.getElementById("status").innerHTML = "Car 1 Wins!!";
+    }
+    if(car2_x>700)
+    {
+        console.log("Car 2 Won");
+        document.getElementById("status").innerHTML = "Car 2 Wins!!";
+    }
 }
 function car1up(){
-    console.log("This is car 1 up");
+    if(car1_y>=0){
+        car1_y = car1_y-10;
+        console.log("When up is pressed, x = " + car1_x + " and y = " + car1_y);
+        uploadBackgound();
+        uploadCar1();
+        uploadCar2();
+    }
+    console.log("This is up");
 }
 function car1down(){
-    console.log("This is function car 1 down");
+    if(car1_y<=500){
+        car1_y = car1_y+10;
+        console.log("When down is pressed, x = " + car1_x + " and y = " + car1_y);
+        uploadBackgound();
+        uploadCar1();
+        uploadCar2();
+    }
 }
 function car1left(){
-    console.log("This is function car 1 left");
-}
+    if(car1_x>=0){
+        car1_x = car1_x-10;
+        console.log("When left is pressed, x = " + car1_x + " and y = " + car1_y);
+        uploadBackgound();
+        uploadCar1();
+        uploadCar2();
+    }
+    }
 function car1right(){
-    console.log("This is function car 1 right");
+    if(car1_x<=700){
+        car1_x = car1_x+10;
+        console.log("When right is pressed, x = " + car1_x + " and y = " + car1_x);
+        uploadBackgound();
+        uploadCar1();
+        uploadCar2();
+    }
 }
-
 function car2up(){
-    console.log("This is function car 2 up");
+    if(car2_y>=0){
+        car2_y = car2_y-10;
+        console.log("When up is pressed, x = " + car2_x + " and y = " + car2_y);
+        uploadBackgound();
+        uploadCar1();
+        uploadCar2();
+    }
+    console.log("This is up");
 }
 function car2down(){
-    console.log("This is function car 2 down");
+    if(car2_y<=500){
+        car2_y = car2_y+10;
+        console.log("When down is pressed, x = " + car2_x + " and y = " + car2_y);
+        uploadBackgound();
+        uploadCar1();
+        uploadCar2();
+    }
 }
 function car2left(){
-    console.log("This is function car 2 left");
-}
+    if(car2_x>=0){
+        car2_x = car2_x-10;
+        console.log("When left is pressed, x = " + car2_x + " and y = " + car2_y);
+        uploadBackgound();
+        uploadCar1();
+        uploadCar2();
+    }
+    }
 function car2right(){
-    console.log("This is function car 2 right");
+    if(car2_x<=700){
+        car2_x = car2_x+10;
+        console.log("When right is pressed, x = " + car2_x + " and y = " + car2_x);
+        uploadBackgound();
+        uploadCar1();
+        uploadCar2();
+    }
 }
+
